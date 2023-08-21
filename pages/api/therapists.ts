@@ -88,6 +88,6 @@ export default async function handler(req: NextApiRequest, res: NextApiResponse<
     return res.status(200).json([]); 
   }
 
-  const therapists = await getAllTherapists(url, 10);
+  const therapists = await getAllTherapists(url, 3);
   res.status(200).json(therapists);
 }
